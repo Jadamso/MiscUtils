@@ -28,13 +28,13 @@ mc_setup <- compiler::cmpfun( function( cores=NA ){
     
     ### Explicit Multi-Core Parameters
     try(setMKLthreads(1), silent=TRUE)
-    registerDoMC(cores)
+    doMC::registerDoMC(cores)
     options("mc.cores"=cores)
     options("Ncpus"=cores)
     
     print("\n MultiCore Setup")
-    message("doMC=", getDoParRegistered())
-    message("mc.cores=", getDoParWorkers() )
+    message("doMC=", foreach::getDoParRegistered())
+    message("mc.cores=", foreach::getDoParWorkers() )
     #getDoParName()
     #getDoParVersion()
 
