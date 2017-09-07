@@ -23,7 +23,7 @@ for( i in rfiles) {
 ################## 
 
 rfile0 <- c(
-    "dire.create.safe.R",
+    "dir.create.safe.R",
     "fill_above.R",
     #"GitHub.R",
     #"LIBS.R",
@@ -32,7 +32,7 @@ rfile0 <- c(
     #"Utilities.R"
 )
 
-rfiles <- paste0(hmdir, "GeoCleanR/", rfile0)
+rfiles <- paste0(hmdir, "MiscUtils/", rfile0)
 
 # Move Code
 file.copy(rfiles, rdir, overwrite=T )
