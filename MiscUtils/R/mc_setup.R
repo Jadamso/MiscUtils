@@ -32,7 +32,7 @@ mc_setup <- compiler::cmpfun( function( cores=NA ){
     options("mc.cores"=cores)
     options("Ncpus"=cores)
     
-    print("\n MultiCore Setup")
+    print("MultiCore Setup")
     message("doMC=", foreach::getDoParRegistered())
     message("mc.cores=", foreach::getDoParWorkers() )
     #getDoParName()
