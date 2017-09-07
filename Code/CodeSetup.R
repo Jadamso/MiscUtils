@@ -7,15 +7,12 @@
 ##################
 
 ## Imported Packages: (.packages())
-rfiles <- c("devtools", "roxygen2")
+rfiles <- c("devtools", "roxygen2", "parallel", "doMC", "foreach")
 for( i in rfiles) {
     devtools::use_package( i, pkg=packg)
 }
 
-#devtools::use_package( "skeleton", "Suggests", pkg=pdir)}
-
-#install.packages("sf")
-#devtools::install_github("thk686/rgdal2")
+#devtools::use_package( "", "Suggests", pkg=pdir)}
 
 #-------------------------------------------------------------------
 ##################
@@ -28,7 +25,8 @@ rfile0 <- c(
     #"GitHub.R",
     #"LIBS.R",
     "PackageMake.R",
-    "Trim.R"
+    "Trim.R",
+    "mc_setup.R"
     #"Utilities.R"
 )
 
