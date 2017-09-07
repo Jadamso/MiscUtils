@@ -44,6 +44,6 @@ citation(pack)
 
 print("Done")
 
-## source("~/Desktop/Packages/GeoCleanR/Code/GeoCleanR.R")
+## source("~/Desktop/Packages/MiscUtils/Code/MiscUtils.R")
 
-## R CMD BATCH GeoCleanR.R
+## R CMD BATCH MiscUtils.R

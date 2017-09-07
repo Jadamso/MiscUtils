@@ -2,6 +2,7 @@
 
 export(dir.create.safe)
 export(fill_above)
+export(mc_setup)
 export(pack_up)
 export(package.setup.safe)
 export(trim)
