@@ -8,7 +8,7 @@
 #' @examples fill_above( c("A", "C", "", "B") , blank="")
 #' @export
 #  http://stackoverflow.com/questions/10554741/r-fill-in-data-frame-with-values-from-rows-above
-fill_above <- function(x, blank = is.na) {
+fill_above <- compiler::cmpfun( function(x, blank = is.na) {
 
   # Find the values
   if (is.function(blank)) {
@@ -26,7 +26,7 @@ fill_above <- function(x, blank = is.na) {
   xnew[is.na(xnew)] <- blank
 
   return(xnew)
-}
+})
 
 
 #zoo::na.locf(GovExpBin$X)
