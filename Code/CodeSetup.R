@@ -19,18 +19,19 @@ for( i in rfiles) {
 # Add Codes
 ################## 
 
-rfile0 <- c(
+rfile <- c(
     "dir.create.safe.R",
     "fill_above.R",
     #"GitHub.R",
     #"LIBS.R",
     "PackageMake.R",
     "Trim.R",
-    "mc_setup.R"
+    "mc_setup.R",
+    "all_info.R"
     #"Utilities.R"
 )
 
-rfiles <- paste0(hmdir, "MiscUtils/", rfile0)
+rfiles <- paste0(hmdir, "MiscUtils/", rfile)
 
 # Move Code
 file.copy(rfiles, rdir, overwrite=T )
