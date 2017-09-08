@@ -10,15 +10,15 @@
 all_info <- compiler::cmpfun( function(){
 
     ## Prints computer information
-    Sys.info()
+    print( Sys.info() )
 
     ## Prints R information
-    sessionInfo()
+    print( sessionInfo() )
 
     ## Rprofile loaded every session
-    readLines( paste0( R.home(), "/etc/Rprofile.site"))
+    print( readLines( paste0( R.home(), "/etc/Rprofile.site")) )
 
     ## Renvironment loaded every session
-    readLines( paste0( R.home(), "/etc/Renviron"))
+    print( readLines( paste0( R.home(), "/etc/Renviron")) )
 
 })
