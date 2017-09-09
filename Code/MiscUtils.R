@@ -20,7 +20,7 @@ pack  <- "MiscUtils"
 pdir  <- paste0(pmdir, pack,"/")
 packg <- paste0(pdir, pack)
 
-Version <- numeric_version("0.1.1")
+Version <- numeric_version("0.1.2")
 
 # Setup R Package
 source(paste0(pdir,"Code/PackageSetup.R") )
@@ -46,4 +46,4 @@ print("Done")
 
 ## source("~/Desktop/Packages/MiscUtils/Code/MiscUtils.R")
 
-## R CMD BATCH MiscUtils.R
+## R CMD BATCH Code/MiscUtils.R && rm MiscUtils.Rout

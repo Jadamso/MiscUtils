@@ -27,6 +27,7 @@ rfile <- c(
     "PackageMake.R",
     "Trim.R",
     "mc_setup.R",
+    "range0.R",
     "all_info.R"
     #"Utilities.R"
 )
