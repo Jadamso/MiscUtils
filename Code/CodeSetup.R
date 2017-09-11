@@ -28,7 +28,8 @@ rfile <- c(
     "Trim.R",
     "mc_setup.R",
     "range0.R",
-    "all_info.R"
+    "all_info.R",
+    "rmall.R"
     #"Utilities.R"
 )
 
