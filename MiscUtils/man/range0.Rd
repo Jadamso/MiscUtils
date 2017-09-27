@@ -2,7 +2,7 @@
 % Please edit documentation in R/range0.R
 \name{range0}
 \alias{range0}
-\title{Returns Floor and Celeings}
+\title{Returns Floor and Ceilings}
 \usage{
 range0(x, e = 1)
 }
@@ -12,5 +12,5 @@ range0(x, e = 1)
 \item{e}{decimal rounding}
 }
 \description{
-Returns Floor and Celeings
+Returns Floor and Ceilings
 }
