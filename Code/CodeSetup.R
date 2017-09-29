@@ -29,7 +29,8 @@ rfile <- c(
     "mc_setup.R",
     "range0.R",
     "all_info.R",
-    "rmall.R"
+    "rmall.R",
+    "list_na.R"
     #"Utilities.R"
 )
 

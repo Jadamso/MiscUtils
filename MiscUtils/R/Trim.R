@@ -6,17 +6,17 @@
 #' returns string without leading whitespace
 #' @param x A character string
 #' @export
-trim.leading <- function(x)  gsub("^\\s+", "", x)
+trim.leading <- compiler::cmpfun(function(x)  gsub("^\\s+", "", x))
 
 #' returns string without trailing whitespace
 #' @param x A character string
 #' @export
-trim.trailing <- function(x) gsub("\\s+$", "", x)
+trim.trailing <- compiler::cmpfun(function(x) gsub("\\s+$", "", x))
 
 #' returns string without leading or trailing whitespace
 #' @param x A character string
 #' @export
-trim.all <- function(x) gsub("^\\s+|\\s+$", "", x)
+trim.all <- compiler::cmpfun(function(x) gsub("^\\s+|\\s+$", "", x))
 
 
 #------------------------------------------------------------------
@@ -28,7 +28,7 @@ trim.all <- function(x) gsub("^\\s+|\\s+$", "", x)
 #' @return A character string
 #' @examples trim( " AA   ")
 #' @export
-trim <- function(x, strip="all"){
+trim <- compiler::cmpfun( function(x, strip="all"){
 	if(strip=="all") {
 		trim.all(x)
 	} else if(strip=="leading") {
@@ -36,6 +36,4 @@ trim <- function(x, strip="all"){
 	} else if(strip=="trailing") {
 		trim.trailing(x)
 	} else{ message("strip != leading, trailing, all")}
-}
-
-trim <- compiler::cmpfun(trim)
+})
