@@ -46,4 +46,4 @@ print("Done")
 
 ## source("~/Desktop/Packages/MiscUtils/Code/MiscUtils.R")
 
-## R CMD BATCH Code/MiscUtils.R && rm MiscUtils.Rout
+## R CMD BATCH Code/MiscUtils.R && rm MiscUtils.Rout .RData

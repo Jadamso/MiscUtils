@@ -27,7 +27,7 @@ source('/home/Jadamso/Desktop/Common/R_Code/RCheats.R')
 wideScreen() 
 
 [38;5;11m     USER INFORMATION: [0m
-Jordan Adamson, 2017-09-29
+Jordan Adamson, 2017-10-16
 
 [Previously saved workspace restored]
 
@@ -72,8 +72,8 @@ Depends: R (>= 3.4.1)
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-Published: 2017-09-29
-Date: 2017-09-29
+Published: 2017-10-16
+Date: 2017-10-16
 URL: https://sites.google.com/a/g.clemson.edu/ja-resources
 
 To cite package 'MiscUtils' in publications use:
@@ -87,7 +87,7 @@ A BibTeX entry for LaTeX users is
     title = {{MiscUtils}: A Library for Building Packages},
     author = {'Jordan Adamson'},
     year = {2017},
-    month = {9},
+    month = {10},
     note = {R package version 0.1.2},
     url = {https://sites.google.com/a/g.clemson.edu/ja-resources},
   }
@@ -125,10 +125,10 @@ _R_CHECK_CRAN_INCOMING_           : FALSE
 _R_CHECK_FORCE_SUGGESTS_          : FALSE
 Checking MiscUtils ------------------------------------------------------------
 '/home/Jadamso/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD check '/tmp/RtmpxXg3ni/MiscUtils_0.1.2.tar.gz'  \
+  --no-restore --quiet CMD check '/tmp/RtmpDKC2Fo/MiscUtils_0.1.2.tar.gz'  \
   --as-cran --timings --no-manual 
 
-* using log directory ‘/tmp/RtmpxXg3ni/MiscUtils.Rcheck’
+* using log directory ‘/tmp/RtmpDKC2Fo/MiscUtils.Rcheck’
 * using R version 3.4.1 (2017-06-30)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8

@@ -15,7 +15,6 @@ list_nas <- compiler::cmpfun( function(LIST){
 })
 
 
-
 #-------------------------------------------------------------------
 ##################
 #' Indicating Even or Odd

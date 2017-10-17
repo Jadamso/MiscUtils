@@ -2,9 +2,15 @@
 % Please edit documentation in R/range0.R
 \name{range0}
 \alias{range0}
+\alias{floor0}
+\alias{ceiling0}
 \title{Returns Floor and Ceilings}
 \usage{
 range0(x, e = 1)
+
+floor0(x, e = 1)
+
+ceiling0(x, e = 1)
 }
 \arguments{
 \item{x}{a numeric vector}
