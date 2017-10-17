@@ -29,8 +29,6 @@ wideScreen()
 [38;5;11m     USER INFORMATION: [0m
 Jordan Adamson, 2017-10-16
 
-[Previously saved workspace restored]
-
 > #-------------------------------------------------------------------
 > ##################
 > # Setup 
@@ -125,10 +123,10 @@ _R_CHECK_CRAN_INCOMING_           : FALSE
 _R_CHECK_FORCE_SUGGESTS_          : FALSE
 Checking MiscUtils ------------------------------------------------------------
 '/home/Jadamso/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD check '/tmp/RtmpDKC2Fo/MiscUtils_0.1.2.tar.gz'  \
+  --no-restore --quiet CMD check '/tmp/RtmpgVjlss/MiscUtils_0.1.2.tar.gz'  \
   --as-cran --timings --no-manual 
 
-* using log directory ‘/tmp/RtmpDKC2Fo/MiscUtils.Rcheck’
+* using log directory ‘/tmp/RtmpgVjlss/MiscUtils.Rcheck’
 * using R version 3.4.1 (2017-06-30)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8

@@ -4,6 +4,7 @@
 \alias{range0}
 \alias{floor0}
 \alias{ceiling0}
+\alias{seq0}
 \title{Returns Floor and Ceilings}
 \usage{
 range0(x, e = 1)
@@ -11,6 +12,8 @@ range0(x, e = 1)
 floor0(x, e = 1)
 
 ceiling0(x, e = 1)
+
+seq0(x, e = 1, ...)
 }
 \arguments{
 \item{x}{a numeric vector}

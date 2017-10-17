@@ -20,6 +20,13 @@ floor0 <- compiler::cmpfun( function(x, e=1) { return(floor(x*10^e)/10^e ) })
 #' @export
 ceiling0 <- compiler::cmpfun( function(x, e=1) { return(ceiling(x*10^e)/10^e ) })
 
+#' @rdname range0
+#' @export
+seq0 <- compiler::cmpfun( function(x, e=1, ...){
+    xr <- MiscUtils::range0(x, e)
+    xs <- seq(xr[1],xr[2],...)
+    return(xs)
+})
 
 #------------------------------------------------------------------
 ##################
