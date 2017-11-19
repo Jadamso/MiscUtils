@@ -22,10 +22,9 @@ options(devtools.name="Jordan Adamson",
 ##################
 # Package Description
 ################## 
-
-Title <- 'A Library for Building Packages'
+Title <- pack
 URL   <- 'https://sites.google.com/a/g.clemson.edu/ja-resources'
-Description <- 'See my website <https://sites.google.com/a/g.clemson.edu/ja-resources>. or github <https://github.com/Jadamso>.'
+Description <- 'A Library for Building Packages. See my website <https://sites.google.com/a/g.clemson.edu/ja-resources>. or github <https://github.com/Jadamso>.'
 #This projects adheres to semantic versioning <http://semver.org/>
 Maint <- "'Jordan Adamson<jordan.m.adamson@gmail.com>'"
 
