@@ -34,7 +34,7 @@ rfile <- c(
     #"Utilities.R"
 )
 
-rfiles <- paste0(hmdir, "MiscUtils/", rfile)
+rfiles <- paste0(hmdir, pack, "/", rfile)
 
 # Move Code
 file.copy(rfiles, rdir, overwrite=T )
