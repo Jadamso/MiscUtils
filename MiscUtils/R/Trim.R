@@ -37,3 +37,4 @@ trim <- compiler::cmpfun( function(x, strip="all"){
 		trim.trailing(x)
 	} else{ message("strip != leading, trailing, all")}
 })
+

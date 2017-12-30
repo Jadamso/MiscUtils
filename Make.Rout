@@ -1,0 +1,203 @@
+
+R version 3.4.1 (2017-06-30) -- "Single Candle"
+Copyright (C) 2017 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+
+[38;5;11m     CHEAT SHEETS: [0m
+source('/home/Jadamso/Desktop/Common/R_Code/RCheats.R') 
+
+[38;5;11m     R INFORMATION: [0m
+/home/Jadamso/lib64/R/bin/exec/R -f Code/Make.R --restore --save --no-readline --no-save 
+~/Rprofile.site 
+wideScreen() 
+
+[38;5;11m     USER INFORMATION: [0m
+Jordan Adamson, 2017-12-30
+
+> #-------------------------------------------------------------------
+> ##################
+> # Setup 
+> ##################
+> library(devtools)
+> library(roxygen2)
+> #library(MiscUtils)
+> 
+>  
+> pmdir <- path.expand("~/Desktop/Packages/")
+> 
+> source( paste0(pmdir, "MiscUtils/Code/R_Code/dir.create.safe.R"))
+> source( paste0(pmdir, "MiscUtils/Code/R_Code/PackageMake.R"))
+> #-------------------------------------------------------------------
+> ##################
+> # Make 
+> ##################
+> 
+> pack  <- "MiscUtils"
+> pdir  <- paste0(pmdir, pack,"/")
+> packg <- paste0(pdir, pack)
+> 
+> Version <- numeric_version("0.1.3")
+> 
+> # Setup R Package
+> source(paste0(pdir,"Code/PackageSetup.R") )
+Creating package 'MiscUtils' in '/home/Jadamso/Desktop/Packages/MiscUtils'
+No DESCRIPTION found. Creating with values:
+
+
+Package: MiscUtils
+Title: MiscUtils
+Version: 0.1.3
+Authors@R: person("Jordan", "Adamson",
+        email="jordan.m.adamson@gmail.com",
+        role=c("aut","cre"))
+Description: A Library for Building Packages. See my website <https://sites.google.com/a/g.clemson.edu/ja-resources>. or github <https://github.com/Jadamso>.
+Depends: R (>= 3.4.1)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Published: 2017-12-30
+Date: 2017-12-30
+URL: https://sites.google.com/a/g.clemson.edu/ja-resources
+
+To cite package 'MiscUtils' in publications use:
+
+  Jordan Adamson (2017). MiscUtils: MiscUtils. R package version 0.1.3.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{MiscUtils,
+    title = {{MiscUtils}: MiscUtils},
+    author = {'Jordan Adamson'},
+    year = {2017},
+    month = {12},
+    note = {R package version 0.1.3},
+    url = {https://sites.google.com/a/g.clemson.edu/ja-resources},
+  }
+
+* Updating license field in DESCRIPTION.
+* Creating `LICENSE` from template.
+Creating package 'MiscUtils' in '/home/Jadamso/Desktop/Packages/MiscUtils'
+Updating MiscUtils documentation
+Loading MiscUtils
+Updating roxygen version in /home/Jadamso/Desktop/Packages/MiscUtils/MiscUtils/DESCRIPTION
+Writing NAMESPACE
+Setting env vars --------------------------------------------------------------
+CFLAGS  : -Wall -pedantic
+CXXFLAGS: -Wall -pedantic
+Building MiscUtils ------------------------------------------------------------
+'/home/Jadamso/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
+  --no-restore --quiet CMD build  \
+  '/home/Jadamso/Desktop/Packages/MiscUtils/MiscUtils' --no-resave-data  \
+  --no-manual 
+
+* checking for file ‘/home/Jadamso/Desktop/Packages/MiscUtils/MiscUtils/DESCRIPTION’ ... OK
+* preparing ‘MiscUtils’:
+* checking DESCRIPTION meta-information ... OK
+* checking for LF line-endings in source and make files
+* checking for empty or unneeded directories
+Removed empty directory ‘MiscUtils/R’
+Removed empty directory ‘MiscUtils/data’
+Removed empty directory ‘MiscUtils/inst/extdata’
+Removed empty directory ‘MiscUtils/man’
+* building ‘MiscUtils_0.1.3.tar.gz’
+
+Setting env vars --------------------------------------------------------------
+_R_CHECK_CRAN_INCOMING_USE_ASPELL_: TRUE
+_R_CHECK_CRAN_INCOMING_           : FALSE
+_R_CHECK_FORCE_SUGGESTS_          : FALSE
+Checking MiscUtils ------------------------------------------------------------
+'/home/Jadamso/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
+  --no-restore --quiet CMD check '/tmp/Rtmp0cHl8X/MiscUtils_0.1.3.tar.gz'  \
+  --as-cran --timings --no-manual 
+
+* using log directory ‘/tmp/Rtmp0cHl8X/MiscUtils.Rcheck’
+* using R version 3.4.1 (2017-06-30)
+* using platform: x86_64-pc-linux-gnu (64-bit)
+* using session charset: UTF-8
+* using options ‘--no-manual --as-cran’
+* checking for file ‘MiscUtils/DESCRIPTION’ ... OK
+* this is package ‘MiscUtils’ version ‘0.1.3’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘MiscUtils’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking examples ... NONE
+* DONE
+
+Status: OK
+
+> 
+> # Create R Package Contents
+> source(paste0(pdir,"Code/CodeSetup.R") )
+* Adding devtools to Imports
+Next: 
+Refer to functions with devtools::fun()
+* Adding roxygen2 to Imports
+Next: 
+Refer to functions with roxygen2::fun()
+* Adding parallel to Imports
+Next: 
+Refer to functions with parallel::fun()
+* Adding doMC to Imports
+Next: 
+Refer to functions with doMC::fun()
+* Adding foreach to Imports
+Next: 
+Refer to functions with foreach::fun()
+Loading MiscUtils
+Updating MiscUtils documentation
+Loading MiscUtils
+Writing NAMESPACE
+Writing pack_up.Rd
+Writing trim.leading.Rd
+Writing trim.trailing.Rd
+Writing trim.all.Rd
+Writing trim.Rd
+Writing all_info.Rd
+Writing bin_mode.Rd
+Writing dir.create.safe.Rd
+Writing package.setup.safe.Rd
+Writing fill_above.Rd
+Writing list_nas.Rd
+Writing is.even.Rd
+Writing mc_setup.Rd
+Writing range0.Rd
+Writing censor.Rd
+Writing rmall.Rd
+> 
+> pack_up(pdir)
+/home/Jadamso/Desktop/Packages/MiscUtils/ is required to already be on github

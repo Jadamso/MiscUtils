@@ -9,8 +9,8 @@ library(roxygen2)
  
 pmdir <- path.expand("~/Desktop/Packages/")
 
-source( paste0(hmdir, "MiscUtils/dir.create.safe.R"))
-source( paste0(hmdir, "MiscUtils/PackageMake.R"))
+source( paste0(pmdir, "MiscUtils/Code/R_Code/dir.create.safe.R"))
+source( paste0(pmdir, "MiscUtils/Code/R_Code/PackageMake.R"))
 #-------------------------------------------------------------------
 ##################
 # Make 
@@ -20,7 +20,7 @@ pack  <- "MiscUtils"
 pdir  <- paste0(pmdir, pack,"/")
 packg <- paste0(pdir, pack)
 
-Version <- numeric_version("0.1.2")
+Version <- numeric_version("0.1.3")
 
 # Setup R Package
 source(paste0(pdir,"Code/PackageSetup.R") )

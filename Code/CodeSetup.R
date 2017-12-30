@@ -28,6 +28,7 @@ rfile <- c(
     "Trim.R",
     "mc_setup.R",
     "range0.R",
+    "bin_mode.R",
     "all_info.R",
     "rmall.R",
     "list_na.R"
