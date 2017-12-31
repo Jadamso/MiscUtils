@@ -23,12 +23,12 @@ rfile <- c(
     "dir.create.safe.R",
     "fill_above.R",
     #"GitHub.R",
-    #"LIBS.R",
+    #"LIBS.R",     "bin_mode.R",
     "PackageMake.R",
     "Trim.R",
     "mc_setup.R",
     "range0.R",
-    "bin_mode.R",
+
     "all_info.R",
     "rmall.R",
     "list_na.R"

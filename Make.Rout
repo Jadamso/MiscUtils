@@ -27,7 +27,7 @@ source('/home/Jadamso/Desktop/Common/R_Code/RCheats.R')
 wideScreen() 
 
 [38;5;11m     USER INFORMATION: [0m
-Jordan Adamson, 2017-12-30
+Jordan Adamson, 2017-12-31
 
 > #-------------------------------------------------------------------
 > ##################
@@ -70,8 +70,8 @@ Depends: R (>= 3.4.1)
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
-Published: 2017-12-30
-Date: 2017-12-30
+Published: 2017-12-31
+Date: 2017-12-31
 URL: https://sites.google.com/a/g.clemson.edu/ja-resources
 
 To cite package 'MiscUtils' in publications use:
@@ -122,10 +122,10 @@ _R_CHECK_CRAN_INCOMING_           : FALSE
 _R_CHECK_FORCE_SUGGESTS_          : FALSE
 Checking MiscUtils ------------------------------------------------------------
 '/home/Jadamso/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
-  --no-restore --quiet CMD check '/tmp/Rtmp0cHl8X/MiscUtils_0.1.3.tar.gz'  \
+  --no-restore --quiet CMD check '/tmp/Rtmp28HpT4/MiscUtils_0.1.3.tar.gz'  \
   --as-cran --timings --no-manual 
 
-* using log directory ‘/tmp/Rtmp0cHl8X/MiscUtils.Rcheck’
+* using log directory ‘/tmp/Rtmp28HpT4/MiscUtils.Rcheck’
 * using R version 3.4.1 (2017-06-30)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8
@@ -188,7 +188,6 @@ Writing trim.trailing.Rd
 Writing trim.all.Rd
 Writing trim.Rd
 Writing all_info.Rd
-Writing bin_mode.Rd
 Writing dir.create.safe.Rd
 Writing package.setup.safe.Rd
 Writing fill_above.Rd
