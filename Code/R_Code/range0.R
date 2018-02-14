@@ -3,7 +3,8 @@
 #' Returns Floor and Ceilings
 ################## 
 #' @param x a numeric vector
-#' @param e decimal rounding
+#' @param e decimal place to round to
+#' @seealso
 #' @export
 
 range0 <- compiler::cmpfun( function(x, e=1) {
@@ -13,12 +14,15 @@ range0 <- compiler::cmpfun( function(x, e=1) {
 })
 
 #' @rdname range0
+#' @seealso range0 ceiling00
 #' @export
 floor0 <- compiler::cmpfun( function(x, e=1) { return(floor(x*10^e)/10^e ) })
 
 #' @rdname range0
+#' @seealso range0 ceiling00
 #' @export
 ceiling0 <- compiler::cmpfun( function(x, e=1) { return(ceiling(x*10^e)/10^e ) })
+
 
 #' @rdname range0
 #' @export
@@ -27,6 +31,39 @@ seq0 <- compiler::cmpfun( function(x, e=1, ...){
     xs <- seq(xr[1],xr[2],...)
     return(xs)
 })
+
+
+#------------------------------------------------------------------
+##################
+#' Returns Floor and Ceilings
+################## 
+#' @param x a numeric vector
+#' @param e decimal rounding (.25) means nearest quarters
+#' @seealso
+#' @export
+
+
+round00 <- compiler::cmpfun( function(x, e=.25, ...){
+        x <- round(x/e, ...)*e
+        return(x)
+        })
+
+#' @rdname round00
+#' @seealso round00 ceiling0
+#' @export
+ceiling00 <- compiler::cmpfun( function(x, e=.25){
+        x <- ceiling(x/e)*e
+        return(x)
+        })
+
+#' @rdname round00
+#' @seealso round00 floor0
+#' @export     
+floor00 <- compiler::cmpfun( function(x, e=.25){
+        x <- floor(x/e)*e
+        return(x)
+        })
+        
 
 #------------------------------------------------------------------
 ##################
