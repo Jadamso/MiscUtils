@@ -17,7 +17,7 @@ Make an R-package MYPACK with the structure
 
 MYPACK\
 
-  ├── Code\
+  ├── Code\ (All Codes)
   
   │   ├── PackageSetup.R
   
