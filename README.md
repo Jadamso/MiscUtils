@@ -14,6 +14,7 @@
 
 Make an R-package MYPACK with the structure 
 
+`
 MYPACK\
   Code\
     PackageSetup.R
@@ -23,6 +24,7 @@ MYPACK\
       Rfunction1.R
       Rfunction2.R
   MYPACK (R-packages)
+`
         
 append `~/.bashrc` with
 
