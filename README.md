@@ -16,13 +16,21 @@ Make an R-package MYPACK with the structure
 
 
 MYPACK\
+
   ├── Code\
+  
   │   ├── PackageSetup.R
+  
   │   ├── Make.R
+  
   │   ├── CodeSetup.R
+  
   │   └── R_Code\ (Raw Codes)
+  
   │       ├── Rfunction1.R
+  
   │       └── Rfunction2.R
+  
   └── MYPACK (R-package)
 
         
