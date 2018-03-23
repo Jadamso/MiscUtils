@@ -2,12 +2,18 @@
 % Please edit documentation in R/list_na.R
 \name{is.even}
 \alias{is.even}
+\alias{even}
 \alias{is.odd}
+\alias{odd}
 \title{Indicating Even or Odd}
 \usage{
 is.even(x)
 
+even(x)
+
 is.odd(x)
+
+odd(x)
 }
 \arguments{
 \item{x}{}

@@ -27,8 +27,14 @@ list_nas <- compiler::cmpfun( function(LIST){
 #' @export
 
 is.even <- compiler::cmpfun( function(x){ x %% 2 == 0 } )
+#' @rdname is.even
+#' @export
+even <- is.even
 
 #' @rdname is.even
 #' @export
 is.odd  <- compiler::cmpfun( function(x){ x %% 2 != 0 } )
+#' @rdname is.even
+#' @export
+odd <- is.odd
 
