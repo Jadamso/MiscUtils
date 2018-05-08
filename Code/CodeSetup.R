@@ -20,6 +20,7 @@ for( i in rfiles) {
 ################## 
 
 rfile <- c(
+    "all_info.R",
     "dir.create.safe.R",
     "fill_above.R",
     #"GitHub.R",
@@ -28,10 +29,9 @@ rfile <- c(
     "Trim.R",
     "mc_setup.R",
     "range0.R",
-
-    "all_info.R",
     "rmall.R",
-    "list_na.R"
+    "list_na.R",
+    "wideScreen.R"
     #"Utilities.R"
 )
 

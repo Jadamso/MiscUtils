@@ -1,0 +1,134 @@
+#### Jordan Adamson ####
+
+#on PC w/ source build
+# sudo cp ~/Rprofile.site ~/lib64/R/etc/Rprofile.site 
+
+# on PC w/ yum build
+# sudo cp ~/Rprofile.site /usr/lib64/R/etc/Rprofile.site 
+
+## on PC with revolution source build
+## sudo cp ~/Rprofile.site \
+## $HOME/microsoft-r-open-MRO-3.3.1/source/etc/Rprofile.site
+
+##  with MKL 
+## cp ~/Rprofile.site $HOME/microsoft-r-open-MRO-3.3.1/source/etc/Rprofile.site
+
+
+#options(repos = c(CRAN = "https://cran.revolutionanalytics.com") )
+
+
+
+#---------------------------------------------------------------------------
+##################
+# REVOLUTION 
+##################
+##  Setup
+#message("revo setup")
+
+#### Utilities
+load_if_installed <- function(package) {
+  if (!identical(system.file(package="RevoUtilsMath"), "")) {
+    do.call('library', list(package))
+    return(TRUE)
+  } else
+    return(FALSE)
+}
+
+if(load_if_installed("RevoUtilsMath")){
+  local({
+    ncores <- RevoUtilsMath::getMKLthreads()
+    msg <- paste0( "Multithreaded BLAS/LAPACK libraries detected.",
+        "Using %d cores for math algorithms.")
+    message(sprintf(msg, ncores))
+    invisible(NULL)
+  })
+}
+# REVO Options
+#repos.date   <- "2015-08-27"
+#Revo.version <- structure(list(major="3", minor="2.2", "BuildID"="1"),
+#   class = "simple.list")
+#options(repos = c(CRAN = paste("http://mran.revolutionanalytics.com/snapshot/",
+#    repos.date,sep=""))) ## for Microsoft Revolution R
+
+#Sys.setenv("MKL_INTERFACE_LAYER"="GNU,LP64")
+#Sys.setenv("MKL_THREADING_LAYER"="GNU")
+
+
+
+#---------------------------------------------------------------------------
+##################
+# UNUSED
+##################
+
+## Library and Packages
+
+# update.packages(checkBuilt=TRUE, ask=FALSE)
+
+## Quit without saving
+#assignInNamespace( "q", function( save="no", status= 0, runLast=TRUE) {
+#    .Internal(quit(save, status, runLast)) },    "base")
+#q <- function (save="no", ...) { quit(save=save, ...) }
+
+
+### Computation ###
+## Parallel
+#library(foreach)   # Parallel Processing Loop
+#library(doMC)      # Do MultiCore Processing
+#library(parallel)  # Parallel Processing
+#library(pnmath)     # MultiCore Functions
+## Multi-Core Parameters
+#cores = as.numeric(system("nproc", intern=TRUE))
+#setMKLthreads(1)
+#registerDoMC(cores-1)
+
+#try( library(RevoUtilsMath), silent=T)
+
+#options(download.file.method = "curl") #if (capabilities("libcurl")) {
+#    options(download.file.method = "libcurl")}
+
+
+
+
+
+## Rprofile
+#http://www.r-bloggers.com/fun-with-rprofile-and-customizing-r-startup/
+#http://www.r-bloggers.com/customize-your-rprofile-and-keep-your-workspace-clean/
+# http://www.noamross.net/blog/2012/11/2/rprofile.html
+
+## .First() run at the start of every R session. 
+#.First <- function() {
+    #load commonly used packages? 
+    #cat("\nSuccessfully loaded /usr/local/lib64/R/etc/Rprofile.site",date(),"\n")
+#} 
+
+## .Last() run at the end of the session
+#.Last <- function() {
+#    # save command history here?
+#    cat("\nGoodbye at ", date(), "\n")
+#}
+
+
+
+
+
+## I should change Convergence Tolerances
+#optim
+#‘reltol’ Relative convergence tolerance. Defaults to ‘sqrt(.Machine$double.eps)’
+# The algorithm stops at a step if it is unable to reduce the value by a factor of 
+#‘reltol * (abs(val) + reltol)’ 
+
+# glm
+#glm.control(epsilon = 1e-8, maxit = 25, trace = FALSE)
+
+
+#utils::assignInNamespace("q", 
+#   function(save = "no", status = 0, runLast = TRUE) {
+#     .Internal(quit(save, status, runLast))
+#   }, "base")    
+#
+#utils::assignInNamespace("quit", 
+#   function(save = "no", status = 0, runLast = TRUE) {
+#     .Internal(quit(save, status, runLast))
+#   }, "base")
+#
+

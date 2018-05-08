@@ -1,0 +1,5 @@
+    cat("     http://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html \n",sep="")
+    cat("     http://jakeruss.com/cheatsheets/stargazer.html \n",sep="")
+    cat("     http://ww2.coastal.edu/kingw/statistics/R-tutorials/formulae.html \n",sep="")
+    cat("     https://www.rstudio.com/resources/cheatsheets \n",sep="")
+    cat("     http://research.stowers-institute.org/efg/R/Graphics/Basics/mar-oma/ \n",sep="")

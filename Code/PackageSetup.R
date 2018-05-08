@@ -22,16 +22,20 @@ options(devtools.name="Jordan Adamson",
 ##################
 # Package Description
 ################## 
-Title <- pack
-URL   <- 'https://sites.google.com/a/g.clemson.edu/ja-resources'
-Description <- 'A Library for Building Packages. See my website <https://sites.google.com/a/g.clemson.edu/ja-resources>. or github <https://github.com/Jadamso>.'
+Title <- 'A Library for Setting Things Up'
+Description <- 'From Packages, Parallel, Strings,...'
 #This projects adheres to semantic versioning <http://semver.org/>
-Maint <- "'Jordan Adamson<jordan.m.adamson@gmail.com>'"
+
+URL   <- paste0(' <https://github.com/Jadamso/',pack,'>')
+#'https://sites.google.com/a/g.clemson.edu/ja-resources'
+Maint <- "Jordan Adamson <jordan.m.adamson@gmail.com>"
+Author <- "Jordan Adamson [aut, cre]"
 
 
 my_description <- list(
-    # "Maintainer" = Maint, 
     "Title"      = Title,
+    "Author"     = Author,
+    "Maintainer" = Maint, 
     "Description"= Description,
     "Published"  = Sys.Date(),
     "Date"       = Sys.Date(),
