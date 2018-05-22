@@ -4,10 +4,12 @@
 \alias{trim.trailing}
 \title{returns string without trailing whitespace}
 \usage{
-trim.trailing(x, s = "")
+trim.trailing(x, r = "\\\\s", s = "")
 }
 \arguments{
 \item{x}{A character string}
+
+\item{s, r}{alternative replacement character}
 }
 \description{
 returns string without trailing whitespace

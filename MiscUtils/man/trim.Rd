@@ -4,15 +4,14 @@
 \alias{trim}
 \title{Trim Whitespace from a String}
 \usage{
-trim(x, s = "", strip = "all")
+trim(x, r = "\\\\s", s = "", strip = "all")
 }
 \arguments{
 \item{x}{A character string}
 
+\item{s, r}{alternative replacement character}
+
 \item{strip}{the whitespace to be removed: 'trailing', 'leading', or 'all'}
-}
-\value{
-A character string
 }
 \description{
 Trim Whitespace from a String

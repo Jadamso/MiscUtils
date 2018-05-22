@@ -4,10 +4,12 @@
 \alias{trim.all}
 \title{returns string without leading or trailing whitespace}
 \usage{
-trim.all(x, s = "")
+trim.all(x, r = "\\\\s", s = "")
 }
 \arguments{
 \item{x}{A character string}
+
+\item{s, r}{alternative replacement character}
 }
 \description{
 returns string without leading or trailing whitespace

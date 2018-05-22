@@ -4,10 +4,12 @@
 \alias{trim.leading}
 \title{returns string without leading whitespace}
 \usage{
-trim.leading(x, s = "")
+trim.leading(x, r = "\\\\s", s = "")
 }
 \arguments{
 \item{x}{A character string}
+
+\item{s, r}{alternative replacement character}
 }
 \description{
 returns string without leading whitespace
