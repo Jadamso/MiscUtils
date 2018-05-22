@@ -4,7 +4,7 @@
 \alias{trim.all}
 \title{returns string without leading or trailing whitespace}
 \usage{
-trim.all(x)
+trim.all(x, s = "")
 }
 \arguments{
 \item{x}{A character string}

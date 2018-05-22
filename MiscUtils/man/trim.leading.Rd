@@ -4,7 +4,7 @@
 \alias{trim.leading}
 \title{returns string without leading whitespace}
 \usage{
-trim.leading(x)
+trim.leading(x, s = "")
 }
 \arguments{
 \item{x}{A character string}

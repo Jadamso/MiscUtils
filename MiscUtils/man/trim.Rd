@@ -4,12 +4,12 @@
 \alias{trim}
 \title{Trim Whitespace from a String}
 \usage{
-trim(x, strip = "all")
+trim(x, s = "", strip = "all")
 }
 \arguments{
 \item{x}{A character string}
 
-\item{strip}{the whitespace to be removed: trailing, leading, or both}
+\item{strip}{the whitespace to be removed: 'trailing', 'leading', or 'all'}
 }
 \value{
 A character string

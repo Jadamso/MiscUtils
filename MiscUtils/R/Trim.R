@@ -6,17 +6,17 @@
 #' returns string without leading whitespace
 #' @param x A character string
 #' @export
-trim.leading <- compiler::cmpfun(function(x)  gsub("^\\s+", "", x))
+trim.leading <- compiler::cmpfun(function(x,s="")  gsub("^\\s+", s, x))
 
 #' returns string without trailing whitespace
 #' @param x A character string
 #' @export
-trim.trailing <- compiler::cmpfun(function(x) gsub("\\s+$", "", x))
+trim.trailing <- compiler::cmpfun(function(x,s="") gsub("\\s+$", s, x))
 
 #' returns string without leading or trailing whitespace
 #' @param x A character string
 #' @export
-trim.all <- compiler::cmpfun(function(x) gsub("^\\s+|\\s+$", "", x))
+trim.all <- compiler::cmpfun(function(x,s="") gsub("^\\s+|\\s+$", s, x))
 
 
 #------------------------------------------------------------------
@@ -24,17 +24,17 @@ trim.all <- compiler::cmpfun(function(x) gsub("^\\s+|\\s+$", "", x))
 #' Trim Whitespace from a String
 ################## 
 #' @param x A character string
-#' @param strip the whitespace to be removed: trailing, leading, or both
+#' @param strip the whitespace to be removed: 'trailing', 'leading', or 'all'
 #' @return A character string
 #' @examples trim( " AA   ")
 #' @export
-trim <- compiler::cmpfun( function(x, strip="all"){
+trim <- compiler::cmpfun( function(x, s="",strip="all"){
 	if(strip=="all") {
-		trim.all(x)
+		trim.all(x,s)
 	} else if(strip=="leading") {
-		trim.leading(x)
+		trim.leading(x,s)
 	} else if(strip=="trailing") {
-		trim.trailing(x)
+		trim.trailing(x,s)
 	} else{ message("strip != leading, trailing, all")}
 })
 

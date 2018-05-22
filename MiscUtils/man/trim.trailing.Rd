@@ -4,7 +4,7 @@
 \alias{trim.trailing}
 \title{returns string without trailing whitespace}
 \usage{
-trim.trailing(x)
+trim.trailing(x, s = "")
 }
 \arguments{
 \item{x}{A character string}
