@@ -7,7 +7,7 @@
 \alias{seq0}
 \title{Returns Floor and Ceilings}
 \usage{
-range0(x, e = 1, keepna = T)
+range0(x, e = 1, keepna = T, keepinf = T)
 
 floor0(x, e = 1)
 
@@ -20,7 +20,7 @@ seq0(x, e = 1, ...)
 
 \item{e}{decimal place to round to}
 
-\item{keepna}{logical keep NA values}
+\item{keepna, keepinf}{logical keep NA or Inf values}
 }
 \description{
 Returns Floor and Ceilings

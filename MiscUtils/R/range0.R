@@ -4,14 +4,18 @@
 ################## 
 #' @param x a numeric vector
 #' @param e decimal place to round to
-#' @param keepna logical keep NA values
+#' @param keepna,keepinf logical keep NA or Inf values
 #' @seealso
 #' @export
 
-range0 <- compiler::cmpfun( function(x, e=1, keepna=T) {
+range0 <- compiler::cmpfun( function(x, e=1, keepna=T, keepinf=T) {
 
 	if(!keepna){
         x <- x[!is.na(x)]
+	}
+	
+	if(!keepinf){
+        x <- x[!(x==Inf | x==-Inf)]
 	}
 	
 	e <- 10^e 
@@ -39,19 +43,6 @@ seq0 <- compiler::cmpfun( function(x, e=1, ...){
     xr <- MiscUtils::range0(x, e)
     xs <- seq(xr[1],xr[2],...)
     return(xs)
-})
-
-
-
-#------------------------------------------------------------------
-##################
-#' My Color Palette
-################## 
-#' @param n integer number of colors
-#' @export
-#' @example spatstat::colourmap(mypal(20), breaks=seq(0,1,by=.05))
-mypal <- compiler::cmpfun( function(n){
-    colorRampPalette(c('dark red','white','dark blue'))(n)
 })
 
 
