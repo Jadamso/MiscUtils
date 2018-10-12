@@ -7,7 +7,7 @@
 \alias{seq0}
 \title{Returns Floor and Ceilings}
 \usage{
-range0(x, e = 1)
+range0(x, e = 1, keepna = T)
 
 floor0(x, e = 1)
 
@@ -19,6 +19,8 @@ seq0(x, e = 1, ...)
 \item{x}{a numeric vector}
 
 \item{e}{decimal place to round to}
+
+\item{keepna}{logical keep NA values}
 }
 \description{
 Returns Floor and Ceilings

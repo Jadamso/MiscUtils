@@ -4,8 +4,8 @@
 \alias{wideScreen}
 \title{Format Terminal Viewing Screen}
 \usage{
-wideScreen(howWide = Sys.getenv("COLUMNS"), howTall = Sys.getenv("LINES"),
-  tt = FALSE)
+wideScreen(howWide = Sys.getenv("COLUMNS"),
+  howTall = Sys.getenv("LINES"), tt = FALSE)
 }
 \arguments{
 \item{howWide, howTall}{number of terminal columns and rows}
