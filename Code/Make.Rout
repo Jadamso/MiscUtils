@@ -233,3 +233,95 @@ file ‘MiscUtils.pdf’ exists; please remove it first
 > 
 > MiscUtils::pack_up(pdir)
 /home/Jadamso2/Desktop/Packages/MiscUtils/ is required to already be on github
+To https://github.com/Jadamso/MiscUtils.git
+   5f1f552..898cf08  master -> master
+[1] "/home/Jadamso2/Desktop/Packages/MiscUtils/"
+> ## https://www.rstudio.com/wp-content/uploads/2015/03/devtools-cheatsheet.pdf
+> 
+> devtools::install(packg) ## Locally Works
+Installing MiscUtils
+'/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
+  --no-restore --quiet CMD INSTALL  \
+  '/home/Jadamso2/Desktop/Packages/MiscUtils/MiscUtils'  \
+  --library='/home/Jadamso2/R-Libs' --install-tests 
+
+* installing *source* package ‘MiscUtils’ ...
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (MiscUtils)
+Reloading installed MiscUtils
+
+Attaching package: ‘MiscUtils’
+
+The following objects are masked _by_ ‘.GlobalEnv’:
+
+    dir.create.safe, pack_up, package.setup.safe
+
+The following object is masked from ‘package:base’:
+
+    wideScreen
+
+> 
+> devtools::install_github( paste0("Jadamso/",pack), subdir=pack)
+Downloading GitHub repo Jadamso/MiscUtils@master
+from URL https://api.github.com/repos/Jadamso/MiscUtils/zipball/master
+Installing MiscUtils
+'/home/Jadamso2/lib64/R/bin/R' --no-site-file --no-environ --no-save  \
+  --no-restore --quiet CMD INSTALL  \
+  '/tmp/RtmpIJOjqc/devtools2ea45fdc8b80/Jadamso-MiscUtils-898cf08/MiscUtils'  \
+  --library='/home/Jadamso2/R-Libs' --install-tests 
+
+* installing *source* package ‘MiscUtils’ ...
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (MiscUtils)
+Reloading installed MiscUtils
+
+Attaching package: ‘MiscUtils’
+
+The following objects are masked _by_ ‘.GlobalEnv’:
+
+    dir.create.safe, pack_up, package.setup.safe
+
+The following object is masked from ‘package:base’:
+
+    wideScreen
+
+> 
+> citation(pack)
+
+To cite package 'MiscUtils' in publications use:
+
+  Jordan Adamson (2018). MiscUtils: A Library for Setting Things Up. R
+  package version 0.1.4.
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{MiscUtils,
+    title = {{MiscUtils}: A Library for Setting Things Up},
+    author = {'Jordan Adamson'},
+    year = {2018},
+    month = {10},
+    note = {R package version 0.1.4},
+    url = { <https://github.com/Jadamso/MiscUtils>},
+  }
+
+> 
+> print("Done")
+[1] "Done"
+> 
+> ## R CMD BATCH --no-save Code/Make.R Code/Make.Rout
+> 
+> proc.time()
+   user  system elapsed 
+  5.217   0.735  13.537 

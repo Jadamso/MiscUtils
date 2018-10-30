@@ -35,6 +35,7 @@ package.setup.safe <- compiler::cmpfun( function(
 {
     #if rm==TRUE #system( paste0("rm -rf ", pdir))  
     if(dir.exists(DIR)==FALSE)  {
+        #usethis::create_package
         devtools::create( DIR,
             my_description,
             rstudio=rstudio,
