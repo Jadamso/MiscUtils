@@ -104,7 +104,8 @@ writeLines(
 ################## 
 
 options( devtools.desc.license='MIT + file LICENSE' )
-devtools::use_mit_license(packg)
+#usethis::use_mit_license(packg)
+usethis::use_mit_license("Jordan Adamson")
 #writeLines( c( paste0("YEAR: ", year), "COPYRIGHT HOLDER: Jordan Adamson"), con=paste0( packg, "/LICENSE") )
 
 package.setup.safe(packg, check=T)

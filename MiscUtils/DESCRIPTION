@@ -1,22 +1,23 @@
 Package: MiscUtils
 Title: A Library for Setting Things Up
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: person("Jordan", "Adamson",
         email="jordan.m.adamson@gmail.com",
         role=c("aut","cre"))
 Description: From Packages, Parallel, Strings,...
-Depends: R (>= 3.5.0)
-License: MIT + file LICENSE
+Depends: R (>= 3.5.1)
+License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 Author: Jordan Adamson [aut, cre]
 Maintainer: Jordan Adamson <jordan.m.adamson@gmail.com>
-Published: 2018-10-11
-Date: 2018-10-11
+Published: 2018-12-17
+Date: 2018-12-17
 URL: <https://github.com/Jadamso/MiscUtils>
-RoxygenNote: 6.1.0
-Imports: devtools,
+Imports: 
+    devtools,
     roxygen2,
     parallel,
     doMC,
     foreach
+RoxygenNote: 6.1.1
